@@ -1,3 +1,19 @@
+// Program 2
+// Given a n*n matrix, Find the diagonal sum by adding power of n to each value.
+// Sample Input:
+
+// 3 3
+// 2 6 1
+// 1 2 1
+// 1 1 1
+// Output:
+
+// 27
+
+
+
+
+
 package com.company;
 
 import java.util.Collection;
