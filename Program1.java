@@ -1,3 +1,18 @@
+// Program 1
+// Given a list of sentence as string. convert the alphabet characters to opposite case. Example 'a' -> 'A', 'D' -> 'd'.
+// Sample Inputs:
+
+// Hi Hello How are you?
+// Today is a Programming day 1
+// NOT ALL ARE CAPS
+// Outputs:
+
+// hI hELLO hOW aRE yOU?
+// tODAY iS A pROGRAMMING DAY 1
+// not all are caps
+
+
+
 package com.company;
 
 import java.util.Scanner;
