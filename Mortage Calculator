@@ -1,0 +1,30 @@
+package com.company;
+
+import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        final byte number_of_months=12;
+        final byte percent=100;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the principal ");
+        int principal=scanner.nextInt();
+        System.out.println("Enter the rate of interest ");
+        float annualInterest=scanner.nextFloat();
+        float monthlyInterest = annualInterest / percent / number_of_months;
+        System.out.println("Enter the number of years ");
+        byte years=scanner.nextByte();
+        int numberOfPayments = years * number_of_months;
+        System.out.println("principal " + principal + " Rate of interest " + annualInterest + " No of Years "+ years);
+
+        double mortgage = principal*(monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))/(Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
+
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Mortgage using currency instance: " + mortgageFormatted);
+        System.out.println("Mortgage using math.round : " + Math.round(mortgage));
+
+    }
+}
